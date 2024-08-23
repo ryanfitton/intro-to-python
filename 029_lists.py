@@ -25,7 +25,8 @@ my_friends = ["Victoria", "Mel", "Melanie", "Emma"]
 
 # @TASK Try making your own here:
 
-your_list = ...
+test_var = 'Test var'
+your_list = ['Cheese', 'Tomato', 'Basil', test_var]
 print(your_list)
 
 # @TASK and print it out by running:
@@ -33,3 +34,6 @@ print(your_list)
 #   python 029_lists.py
 
 # When you're done, move on to 030_list_indexing.py
+
+# Run:
+# python 029_lists.py

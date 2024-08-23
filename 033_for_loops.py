@@ -18,9 +18,11 @@ for letter in ["a", "b", "c"]:
 # It's pretty nice. And there's another Python helper that
 # makes it even more useful:
 
+
 def print_numbers_in_range():
   for number in range(0, 10):
     print(f"This number is {number}")
+
 
 # `range` more or less creates a list of the numbers from
 # its first parameter to one below its last parameter. So:
@@ -29,11 +31,13 @@ def print_numbers_in_range():
 # Compare this to the `while` version which does the same
 # thing:
 
+
 def print_numbers_in_range_with_a_while():
   number = 0
   while number < 10:
     print(f"This number is {number}")
     number = number + 1
+
 
 # The `for` and `range` version is a bit more concise.
 
@@ -51,3 +55,6 @@ def print_numbers_in_range_with_a_while():
 #   a list.
 
 # To start summarising, go to 034_summarising.py
+
+# Run:
+# python 033_for_loops.py

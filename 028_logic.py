@@ -5,12 +5,12 @@ from lib.helpers import check_that_these_are_equal
 # As we've mentioned, while numeric operators evaluate to
 # numbers, like this:
 
-1 + 2 # evaluates to 3
+1 + 2  # evaluates to 3
 
 # Comparison operators evaluate to True or False
 
-1 == 2 # evaluates to False
-2 == 2 # evaluates to True
+1 == 2  # evaluates to False
+2 == 2  # evaluates to True
 
 # The `if` keyword looks at whether the conditional
 # expression evaluates to True or False to decide whether to
@@ -21,6 +21,7 @@ from lib.helpers import check_that_these_are_equal
 
 # Consider this function:
 
+
 def starts_with_x_or_y(the_str):
   first_letter = the_str[0]
   #                      VV look at this!
@@ -28,6 +29,7 @@ def starts_with_x_or_y(the_str):
     return "It does!"
   else:
     return "It does not."
+
 
 # That `or` operator says "evaluate to true if the condition
 # on the left, or on the right, or both evaluate to true".
@@ -45,8 +47,13 @@ def starts_with_x_or_y(the_str):
 print("")
 print("Function: a_or_b")
 
+
 def a_or_b(a, b):
-  return a or b
+  if a or b:
+    return True
+  else:
+    return False
+
 
 check_that_these_are_equal(a_or_b(True, True), True)
 check_that_these_are_equal(a_or_b(True, False), True)
@@ -58,9 +65,14 @@ check_that_these_are_equal(a_or_b(False, False), False)
 print("")
 print("Function: a_and_b")
 
+
 def a_and_b(a, b):
   # return a ?? b
-  pass
+  if a and b:
+    return True
+  else:
+    return False
+
 
 check_that_these_are_equal(a_and_b(True, True), True)
 check_that_these_are_equal(a_and_b(True, False), False)
@@ -72,14 +84,22 @@ check_that_these_are_equal(a_and_b(False, False), False)
 print("")
 print("Function: not_a")
 
+
 # Note that this operator only takes one value. The operator
 # goes first, and the value second.
 def not_a(a):
   # return ?? a
-  pass
+  if not a:
+    return True
+  else:
+    return False
+
 
 check_that_these_are_equal(not_a(True), False)
 check_that_these_are_equal(not_a(False), True)
 
 # Perhaps you could have guessed those... but now you know
 # for sure! When you're done, move on to 029_lists.py
+
+# Run:
+# python 028_logic.py

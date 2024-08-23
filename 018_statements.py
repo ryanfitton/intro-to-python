@@ -50,3 +50,6 @@ print("---")
 # replaced with the second `20` value.
 
 # When you're ready, move on to 019_state.py
+
+# Run:
+# python 018_statements.py

@@ -13,5 +13,14 @@ print(f"b is {b}")
 
 # Was it what you expected?
 
+# RF:
+# A is 20
+# B is 20
+
+# A is using the same value assigned to var B
+
+# Run:
+# python 019_state.py
+
 # Try to puzzle it out, and then move on to
 # 020_state_tables.py

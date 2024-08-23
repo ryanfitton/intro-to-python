@@ -35,7 +35,13 @@ print("Function: add_one_hundred_to_numbers")
 
 # Return a new list of each number with 100 added
 def add_one_hundred_to_numbers(numbers):
-  pass
+
+  newList = []
+  
+  for number in numbers:
+    newList.append(number + 100)
+
+  return newList
 
 check_that_these_are_equal(
   add_one_hundred_to_numbers([1, 2, 3, 4]), [101, 102, 103, 104])
@@ -43,3 +49,6 @@ check_that_these_are_equal(
   add_one_hundred_to_numbers([2, 3, 4, 5]), [102, 103, 104, 105])
 
 # When you're done, move on to 036_filtering.py
+
+# Run
+# python 035_mapping.py
